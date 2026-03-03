@@ -38,6 +38,13 @@
     .card.exterior { border-left-color: #2e7d32; }
     .card.firstaid { border-left-color: #b71c1c; }
 
+    .card { position: relative; }
+    .card-number {
+      position: absolute; top: 8px; right: 10px;
+      font-size: 0.7rem; font-weight: 700; color: #aaa;
+      letter-spacing: 0.03em;
+    }
+
     .card-section { padding: 12px 14px; border-bottom: 1px solid #f0f0f0; }
     .card-section:last-child { border-bottom: none; }
 
@@ -2153,5 +2160,15 @@
 
 </main>
 
+<script>
+  const cards = document.querySelectorAll('.card.interior, .card.exterior, .card.firstaid');
+  const total = cards.length;
+  cards.forEach((card, i) => {
+    const badge = document.createElement('span');
+    badge.className = 'card-number';
+    badge.textContent = (i + 1) + ' / ' + total;
+    card.appendChild(badge);
+  });
+</script>
 </body>
 </html>
