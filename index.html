@@ -65,6 +65,25 @@
       nav a { font-size: 0.75rem; padding: 5px 10px; }
       .section-title { font-size: 1rem; }
     }
+
+    .section-title.vocabulary { background: #6a1b9a; }
+    .card.vocabulary { border-left-color: #6a1b9a; }
+    .vocab-group-title {
+      font-weight: 700; font-size: 0.8rem; text-transform: uppercase;
+      letter-spacing: 0.05em; color: #6a1b9a;
+      padding: 10px 14px 4px; border-bottom: 1px solid #f0e6ff;
+    }
+    .vocab-item {
+      display: flex; align-items: baseline; gap: 10px;
+      padding: 7px 14px; border-bottom: 1px solid #f9f4ff;
+    }
+    .vocab-item:last-child { border-bottom: none; }
+    .vocab-fr { font-weight: 600; color: #111; min-width: 175px; flex-shrink: 0; }
+    .vocab-en { color: #555; font-style: italic; font-size: 0.92rem; }
+    @media (max-width: 500px) {
+      .vocab-fr { min-width: 120px; font-size: 0.9rem; }
+      .vocab-en { font-size: 0.85rem; }
+    }
   </style>
 </head>
 <body>
@@ -79,6 +98,7 @@
   <a href="#interior">Interior Checks</a>
   <a href="#exterior">Exterior Checks</a>
   <a href="#firstaid">First Aid</a>
+  <a href="#vocabulary">Vocabulary</a>
 </nav>
 
 <main>
@@ -2007,6 +2027,127 @@
     </div>
 
   </div><!-- end firstaid -->
+
+  <!-- ===== VOCABULARY ===== -->
+  <div id="vocabulary">
+    <div class="section-title vocabulary">📖 Vocabulary / Vocabulaire</div>
+
+    <!-- Examiner Commands -->
+    <div class="card vocabulary">
+      <div class="vocab-group-title">🎓 Examiner Commands / Commandes de l'examinateur</div>
+      <div class="vocab-item"><span class="vocab-fr">Prenez la prochaine à droite</span><span class="vocab-en">Take the next right</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Prenez la prochaine à gauche</span><span class="vocab-en">Take the next left</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Tournez à droite / à gauche</span><span class="vocab-en">Turn right / left</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Continuez tout droit</span><span class="vocab-en">Continue straight ahead</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Arrêtez-vous ici</span><span class="vocab-en">Stop here</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Stationnez-vous</span><span class="vocab-en">Park the vehicle</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Faites demi-tour</span><span class="vocab-en">Make a U-turn</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Montrez-moi…</span><span class="vocab-en">Show me…</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Engagez-vous dans le rond-point</span><span class="vocab-en">Enter the roundabout</span></div>
+      <div class="vocab-item"><span class="vocab-fr">À quelle vitesse êtes-vous autorisé à rouler ici ?</span><span class="vocab-en">What speed are you allowed to drive here?</span></div>
+    </div>
+
+    <!-- Vehicle Controls -->
+    <div class="card vocabulary">
+      <div class="vocab-group-title">🎛️ Vehicle Controls / Commandes du véhicule</div>
+      <div class="vocab-item"><span class="vocab-fr">Le volant</span><span class="vocab-en">Steering wheel</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Le frein</span><span class="vocab-en">Brake pedal</span></div>
+      <div class="vocab-item"><span class="vocab-fr">L'embrayage</span><span class="vocab-en">Clutch</span></div>
+      <div class="vocab-item"><span class="vocab-fr">L'accélérateur</span><span class="vocab-en">Accelerator / Gas pedal</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Le levier de vitesses</span><span class="vocab-en">Gear stick / Shifter</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Le frein à main</span><span class="vocab-en">Handbrake / Parking brake</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Le klaxon</span><span class="vocab-en">Horn</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Les essuie-glaces</span><span class="vocab-en">Windshield wipers</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Le clignotant</span><span class="vocab-en">Turn signal / Indicator</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Les phares</span><span class="vocab-en">Headlights</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Les feux de croisement</span><span class="vocab-en">Low beam headlights (dipped)</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Les feux de route</span><span class="vocab-en">High beam headlights (full beam)</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Les feux de détresse</span><span class="vocab-en">Hazard lights</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Les feux stop</span><span class="vocab-en">Brake lights</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Le rétroviseur intérieur</span><span class="vocab-en">Interior mirror</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Les rétroviseurs extérieurs</span><span class="vocab-en">Side mirrors</span></div>
+    </div>
+
+    <!-- Vehicle Parts -->
+    <div class="card vocabulary">
+      <div class="vocab-group-title">🔧 Vehicle Parts / Parties du véhicule</div>
+      <div class="vocab-item"><span class="vocab-fr">Le capot</span><span class="vocab-en">Hood / Bonnet</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Le coffre</span><span class="vocab-en">Trunk / Boot</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Le pare-brise</span><span class="vocab-en">Windshield / Windscreen</span></div>
+      <div class="vocab-item"><span class="vocab-fr">La portière</span><span class="vocab-en">Car door</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Le pneu</span><span class="vocab-en">Tire</span></div>
+      <div class="vocab-item"><span class="vocab-fr">La jante</span><span class="vocab-en">Wheel rim</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Le pare-chocs</span><span class="vocab-en">Bumper</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Le moteur</span><span class="vocab-en">Engine</span></div>
+      <div class="vocab-item"><span class="vocab-fr">La batterie</span><span class="vocab-en">Battery</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Le radiateur</span><span class="vocab-en">Radiator</span></div>
+      <div class="vocab-item"><span class="vocab-fr">L'huile moteur</span><span class="vocab-en">Engine oil</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Le liquide de refroidissement</span><span class="vocab-en">Coolant</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Le lave-glace</span><span class="vocab-en">Windshield washer fluid</span></div>
+      <div class="vocab-item"><span class="vocab-fr">La courroie de distribution</span><span class="vocab-en">Timing belt</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Le tableau de bord</span><span class="vocab-en">Dashboard</span></div>
+    </div>
+
+    <!-- On the Road -->
+    <div class="card vocabulary">
+      <div class="vocab-group-title">🛣️ On the Road / Sur la route</div>
+      <div class="vocab-item"><span class="vocab-fr">La chaussée</span><span class="vocab-en">Roadway / Carriageway</span></div>
+      <div class="vocab-item"><span class="vocab-fr">La voie</span><span class="vocab-en">Lane</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Le trottoir</span><span class="vocab-en">Sidewalk / Pavement</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Le carrefour</span><span class="vocab-en">Intersection / Crossroads</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Le rond-point</span><span class="vocab-en">Roundabout</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Le passage piéton</span><span class="vocab-en">Pedestrian crossing</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Le feu tricolore</span><span class="vocab-en">Traffic light</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Le panneau</span><span class="vocab-en">Road sign</span></div>
+      <div class="vocab-item"><span class="vocab-fr">La ligne blanche continue</span><span class="vocab-en">Solid white line (no crossing)</span></div>
+      <div class="vocab-item"><span class="vocab-fr">L'autoroute</span><span class="vocab-en">Highway / Motorway</span></div>
+      <div class="vocab-item"><span class="vocab-fr">La nationale</span><span class="vocab-en">National road</span></div>
+      <div class="vocab-item"><span class="vocab-fr">La départementale</span><span class="vocab-en">Departmental road</span></div>
+      <div class="vocab-item"><span class="vocab-fr">La bande d'arrêt d'urgence</span><span class="vocab-en">Emergency lane / Hard shoulder</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Le terre-plein central</span><span class="vocab-en">Central reservation / Median</span></div>
+      <div class="vocab-item"><span class="vocab-fr">La voie express</span><span class="vocab-en">Expressway</span></div>
+    </div>
+
+    <!-- Rules & Documents -->
+    <div class="card vocabulary">
+      <div class="vocab-group-title">📋 Rules &amp; Documents / Règles et documents</div>
+      <div class="vocab-item"><span class="vocab-fr">La priorité</span><span class="vocab-en">Right of way / Priority</span></div>
+      <div class="vocab-item"><span class="vocab-fr">La priorité à droite</span><span class="vocab-en">Priority to the right</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Céder le passage</span><span class="vocab-en">Yield / Give way</span></div>
+      <div class="vocab-item"><span class="vocab-fr">La limitation de vitesse</span><span class="vocab-en">Speed limit</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Le code de la route</span><span class="vocab-en">Highway code / Traffic rules</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Le permis de conduire</span><span class="vocab-en">Driver's license</span></div>
+      <div class="vocab-item"><span class="vocab-fr">La carte grise</span><span class="vocab-en">Vehicle registration document</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Le contrôle technique</span><span class="vocab-en">Vehicle inspection (MOT)</span></div>
+      <div class="vocab-item"><span class="vocab-fr">L'assurance</span><span class="vocab-en">Insurance</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Le stationnement</span><span class="vocab-en">Parking</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Le sens interdit</span><span class="vocab-en">No entry / Wrong way</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Le dépassement</span><span class="vocab-en">Overtaking</span></div>
+      <div class="vocab-item"><span class="vocab-fr">La zone 30</span><span class="vocab-en">30 km/h zone</span></div>
+      <div class="vocab-item"><span class="vocab-fr">L'amende / Le procès-verbal (PV)</span><span class="vocab-en">Fine / Ticket</span></div>
+    </div>
+
+    <!-- First Aid -->
+    <div class="card vocabulary">
+      <div class="vocab-group-title">🩺 First Aid / Premiers Secours</div>
+      <div class="vocab-item"><span class="vocab-fr">Un blessé</span><span class="vocab-en">An injured person</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Un témoin</span><span class="vocab-en">A witness</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Les secours</span><span class="vocab-en">Emergency services</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Les pompiers — 18</span><span class="vocab-en">Firefighters — 18</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Le SAMU — 15</span><span class="vocab-en">Medical emergency — 15</span></div>
+      <div class="vocab-item"><span class="vocab-fr">La police — 17</span><span class="vocab-en">Police — 17</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Le 112</span><span class="vocab-en">European emergency number</span></div>
+      <div class="vocab-item"><span class="vocab-fr">La PLS (position latérale de sécurité)</span><span class="vocab-en">Recovery position</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Le massage cardiaque</span><span class="vocab-en">Chest compressions / CPR</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Le défibrillateur</span><span class="vocab-en">Defibrillator (AED)</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Le garrot</span><span class="vocab-en">Tourniquet</span></div>
+      <div class="vocab-item"><span class="vocab-fr">L'hémorragie</span><span class="vocab-en">Hemorrhage / Bleeding</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Inconscient(e)</span><span class="vocab-en">Unconscious</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Une fracture</span><span class="vocab-en">A fracture / Broken bone</span></div>
+      <div class="vocab-item"><span class="vocab-fr">Une brûlure</span><span class="vocab-en">A burn</span></div>
+    </div>
+
+  </div><!-- end vocabulary -->
 
   <div style="height: 40px;"></div>
 
